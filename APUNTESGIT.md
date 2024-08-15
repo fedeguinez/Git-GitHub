@@ -12,7 +12,7 @@ de esta manrea va guardando las cosas con estos parámetros
 PAra ver donde estan esos registros podemos hacer 
 **git config --global -e**, no apareceran lo datos de user y name (lo que congiremos)
 para salir hacermos **:-q + enter** (escribimos dos puntos -q y damos enter)
-**git config --globarl -l**, nos aparecen todas las conficuraciones realizadas, pero en tipo listado
+**git config --global -l**, nos aparecen todas las conficuraciones realizadas, pero en tipo listado
 
 ## 04.Iniciando un proyecto y creando nuestro repositorio --------------------------
 
@@ -21,7 +21,7 @@ Nos ubicamos dentro de la carpeta del proyecto y hacemos
 **git init**, asi comenzaremos a trabajar con git, se crearà la carpeta **.git**, es decir creamos el repositorio central
 **git status**, apareceran todas las carpetas del proyecto, pero en rojo las que todavía no fueron agregador
 - Archivos en rojo, fueron modificados pero no comiterados, se encuentran en el stage
-- Archivs en verde, fueron comiteados 
+- Archivos en verde, fueron comiteados 
 **git add .**, agregamos todos los archivos del proyecto, si queremos agregar archivos especificos
 **git add "nombre del archivo"** sirve para colocar el archivo a dispocisión de un commit
 **git status**, ahora apareceran todos los archivos en verde, indicando que ya fueron agregados
@@ -95,7 +95,7 @@ esto se debe a que el archivo se movio, ahora hacemos los cambios necesarios y p
 
 ## Viajes en el tiempo, resets y reflog --------------------------------------------------
 
-**git reset --soft idDelCommit** puedo modificar ese commit, agreagando modificaciones, una vez realizado los cambios, lo guado como de costumbre git -am "mensaje"
+**git reset --soft idDelCommit** puedo modificar ese commit, agregando modificaciones, una vez realizado los cambios, lo guado como de costumbre git -am "mensaje"
 **git reset mixed idDelCommit**
 **git reset --hard idDelCommit** si quiero borrarlo por completo, y no quiero
 tenerlo en la historia del proyecto, pero si quiero tenerlo en el reflog, para poder
